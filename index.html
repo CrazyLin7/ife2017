@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>任务一：零基础HTML编码</title>
+	<meta charset="UTF-8">   <!-- charset属性 定义了文档的字符编码，值和文档的内容是要一致的 -->
+	<meta name="keywords" content="HTML">   
+	<meta name="description" content="百度前端技术学院任务一：零基础HTML编码">  <!-- 主要描述了文档的基本信息 content中的内容主要是给 搜索引擎 用的 -->
+	<meta name="viewport" content="width=device-width">  <!-- 这一种name为viewport的meta 对移动端浏览器才有效，设置宽高、缩放等等 -->
+	<link rel="shortcut icon" href="favicon.ico"> 
+	<!-- 引入shortcut icon 在href中引入图片地址，一般不要写，浏览器默认 根目录下的图标进行展示，如果不一样就用显示的引入 -->
+	<!-- <link rel="stylesheet" type="text/css" href="../css/style.css"> --><!-- stylesheet引入样式 -->
+	<!-- <base href="https://crazylin7.github.io/blog" target="_blank"> -->
+	<!--  -->
+	<!-- base标签是HTML语言中的基准网址标记，它是一个单标签，位于网页头部文件的head标签内，一个页面最多只能使用一个base元素，用来提供一个指定的默认目标，也算是一种表达路径和连接网址的标记 -->
+	<!-- 由base制定了一个URL地址，接下来你所要调用的文件或图片等就无须再填写完整的地址，只需写上该文件名或图片名即可。 -->
+	<!-- <a href="index"> -->
+	<!-- 完整地址https://crazylin7.github.io/blog/index -->
+	<!-- target属性是网页窗口的打开方式，在base标签中设置该属性，那么页面中所有的链接都将遵循这个方式来打开网页，分别有如下几种选择：
+	1、 _blank：在新窗口打开链接页面。
+	2、 _parent:在上一级窗口中打开链接。
+	3、 _self： 在当前窗口打开链接,此为默认值，可以省略。
+	4、 _top： 在浏览器的整个窗口打开链接，忽略任何框架。 -->
+	<title>任务一：零基础HTML编码</title> 
 </head>
 <body>
 	<header>
@@ -126,9 +143,9 @@
 			<input type="text" id="address" placeholder="这是一个文本输入框">
 			<p>邮箱地址请按要求格式输入</p>
 			<label for="password">请输入密码：</label>
-			<input type="text" id="password" placeholder="这是一个文本输入框">
+			<input type="password" id="password" placeholder="这是一个文本输入框">
 			<label for="confirm-password">请重新输入密码：</label>
-			<input type="text" id="confirm-password" placeholder="这是一个文本输入框">
+			<input type="password" id="confirm-password" placeholder="这是一个文本输入框">
 			<p>密码请问6-16位英文数字</p>
 			<!-- </fieldset> -->
 			<label for="sex">性别：</label>
@@ -170,5 +187,13 @@
 	<footer>
 		<span>>版权所有&copy;</span>
 	</footer>
+	<!-- HTML label和 属性名 都建议用小写 -->
+	<!-- 以下标签语义化的表示章节结构，在HTML5之前都是用div标签进行分隔
+	header 页面头部／标题／logo／搜索表单 等等
+	nav 任何有导航性质的标签都可以用到，比如页面中的导航，可以有多个
+	aside 和主要内容不相关的内容，工具内容／广告什么的
+	article 表示独立的可重复的结构：论坛的帖子／博客的评论
+	section 表示文档中的一个区域：一般会带一个标题　相临的section之间是有相关性的，article则不相关，是独立的
+	footer 章节的尾部：版权信息／相关文档／一些独立内容的尾部也可以用到 -->
 </body>
 </html>
